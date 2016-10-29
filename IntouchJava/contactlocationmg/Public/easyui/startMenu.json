@@ -1,0 +1,59 @@
+[{
+    "id":"startMenu1",
+    "text":"主题皮肤",
+    "href":"",
+    "children":[{
+	    "id":"startMenu11",
+	    "text":"经典",
+	    "href":"",
+	    "iconCls":""
+    },{
+        "id":"startMenu12",
+        "text":"阳光",
+        "href":"",
+        "iconCls":""
+    },{
+        "id":"startMenu13",
+        "text":"花布",
+        "href":"",
+        "iconCls":""
+    },{
+        "id":"startMenu14",
+        "text":"metro",
+        "href":"",
+        "iconCls":""
+    },{
+        "id":"startMenu15",
+        "text":"清新蓝",
+        "href":"",
+        "iconCls":""
+    }],
+	"iconCls":""
+},{
+    "id":"startMenu4",
+    "text":"显示模式",
+    "href":"",
+    "children":[{
+	    "id":"startMenu41",
+	    "text":"经典",
+	    "href":"__APP__/Index/changeModel?name=index2",
+	    "iconCls":""
+    },{
+        "id":"startMenu42",
+        "text":"桌面",
+        "href":"http://localhost/thinksep/index.php/Index/changeModel?name=index2",
+        "iconCls":""
+    }],
+	"iconCls":""
+},{
+    "id":"startMenu2",
+    "text":"退出",
+    "href":"",
+	"iconCls":""
+},
+{
+    "id":"startMenu3",
+    "text":"系统信息",
+    "href":"",
+	"iconCls":""
+},"-"]
