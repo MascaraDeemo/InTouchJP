@@ -12,7 +12,7 @@ File Encoding         : 65001
 
 Date: 2016-10-29 22:54:31
 */
-
+USE contactlocationmg;
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
