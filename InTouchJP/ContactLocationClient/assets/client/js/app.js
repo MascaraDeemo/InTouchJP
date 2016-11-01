@@ -1,6 +1,6 @@
 
 
-var rootUrl = "http://192.168.31.207/contactlocationmg/";
+var rootUrl = "http://10.0.0.79/contactlocationmg/";
 var fileurl = rootUrl+"Public/upload/";
 var clientUrl = rootUrl+"index.php/Client/";
 var uploadUrl = rootUrl+"index.php/Client/upload";
