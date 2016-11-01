@@ -168,7 +168,7 @@ namespace InTouch.Native.Droid
 			googleMap.UiSettings.CompassEnabled = false;
 
 			// disable the my location button
-			googleMap.UiSettings.MyLocationButtonEnabled = false;
+			googleMap.UiSettings.MyLocationButtonEnabled = true;
 
 			// disable the map toolbar
 			googleMap.UiSettings.MapToolbarEnabled = false;

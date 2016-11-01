@@ -203,9 +203,7 @@ namespace InTouch.Data
         {
             _AcquaintanceTable = null;
 
-            // On UWP, it's necessary to Dispose() and nullify the MobileServiceSQLiteStore before 
-            // trying to delete the database file, otherwise an access exception will occur
-            // because of an open file handle. It's okay to do for iOS and Android as well, but not necessary.
+
             _MobileServiceSQLiteStore?.Dispose();
             _MobileServiceSQLiteStore = null;
 

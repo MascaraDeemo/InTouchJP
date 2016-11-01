@@ -4,6 +4,6 @@
 	<color name="primaryDark">#172839</color>
 	<color name="accent">#596375</color>
 	<color name="launchStatusBar">#767a84</color>
-	<color name="window_background">#a2a2a5</color>
+	<color name="window_background">#F5F5F5</color>
 	<color name="tableSectionHeaderText">#cfd2d3</color>
 </resources>

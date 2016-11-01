@@ -54,7 +54,7 @@ namespace InTouch.Native.Droid
 			Window.AddFlags(WindowManagerFlags.DrawsSystemBarBackgrounds);
 
 			// set the title of both the activity and the action bar
-			Title = SupportActionBar.Title = "Acquaintances";
+			Title = SupportActionBar.Title = "InTouchContacts";
 
 			_SwipeRefreshLayout = (SwipeRefreshLayout)FindViewById(Resource.Id.acquaintanceListSwipeRefreshContainer);
 
