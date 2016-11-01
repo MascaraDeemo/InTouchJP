@@ -19,6 +19,7 @@ using FFImageLoading.Transformations;
 using FFImageLoading.Views;
 using Microsoft.Practices.ServiceLocation;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
+using Acquaint.Native.Droid;
 
 namespace InTouch.Native.Droid
 {

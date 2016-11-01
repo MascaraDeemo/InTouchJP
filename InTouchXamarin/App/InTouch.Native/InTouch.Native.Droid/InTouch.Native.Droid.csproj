@@ -316,14 +316,6 @@
   <Import Project="..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="..\..\Common\Acquaint.Data\Acquaint.Data.csproj">
-      <Project>{5A3530AB-4053-4CF3-BEDE-A3E04C45D255}</Project>
-      <Name>InTouch.Data</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Common\Acquaint.Common.Droid\Acquaint.Common.Droid.csproj">
-      <Project>{1C2073B0-B1E6-4D3B-9D10-B0F278C671E4}</Project>
-      <Name>InTouch.Common.Droid</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\Common\InTouch.Util\InTouch.Util.csproj">
       <Project>{1D18D929-1B53-4AF9-9499-14ABB26D257F}</Project>
       <Name>InTouch.Util</Name>
@@ -339,6 +331,14 @@
     <ProjectReference Include="..\..\Common\InTouch.Models\InTouch.Models.csproj">
       <Project>{2C4B0766-DF89-4466-B841-0BA58FD9D19B}</Project>
       <Name>InTouch.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\InTouch.Common.Droid\InTouch.Common.Droid.csproj">
+      <Project>{1C2073B0-B1E6-4D3B-9D10-B0F278C671E4}</Project>
+      <Name>InTouch.Common.Droid</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\InTouch.Data\InTouch.Data.csproj">
+      <Project>{5A3530AB-4053-4CF3-BEDE-A3E04C45D255}</Project>
+      <Name>InTouch.Data</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

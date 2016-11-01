@@ -7,6 +7,7 @@ using Android.Support.V7.App;
 using Android.Views;
 using Android.Widget;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
+using Acquaint.Native.Droid;
 
 namespace InTouch.Native.Droid
 {

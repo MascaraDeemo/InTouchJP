@@ -150,6 +150,7 @@ namespace Acquaint.Native.Droid
 			global::HockeyApp.Resource.Style.HockeyApp_ButtonStyle = global::Acquaint.Native.Droid.Resource.Style.HockeyApp_ButtonStyle;
 			global::HockeyApp.Resource.Style.HockeyApp_EditTextStyle = global::Acquaint.Native.Droid.Resource.Style.HockeyApp_EditTextStyle;
 			global::HockeyApp.Resource.Style.HockeyApp_SingleLineInputStyle = global::Acquaint.Native.Droid.Resource.Style.HockeyApp_SingleLineInputStyle;
+			global::Acquaint.Common.Droid.Resource.String.library_name = global::Acquaint.Native.Droid.Resource.String.library_name;
 		}
 		
 		public partial class Animation

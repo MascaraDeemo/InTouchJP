@@ -20,6 +20,7 @@ using Plugin.ExternalMaps;
 using Plugin.ExternalMaps.Abstractions;
 using Plugin.Messaging;
 using Toolbar = Android.Support.V7.Widget.Toolbar;
+using Acquaint.Native.Droid;
 
 namespace InTouch.Native.Droid
 {
