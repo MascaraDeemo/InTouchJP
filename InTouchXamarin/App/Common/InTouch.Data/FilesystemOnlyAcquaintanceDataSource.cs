@@ -9,10 +9,7 @@ using InTouch.Models;
 
 namespace InTouch.Data
 {
-	/// <summary>
-	/// This class exists mainly for isolating data during our Xamarin Test Cloud test runs, 
-	/// but it can also serve as an example of how to do local storage.
-	/// </summary>
+
 	public class FilesystemOnlyAcquaintanceDataSource : IDataSource<Acquaintance>
 	{
 		const string _FileName = "acquaintances.json";
@@ -28,14 +25,12 @@ namespace InTouch.Data
 			_RootFolder = FileSystem.Current.LocalStorage;
 
 			OnDataSyncError += (object sender, DataSyncErrorEventArgs<Acquaintance> e) => {
-				// Do nothing, because we won't have data sync issues with local storage
+				
 			};
 		}
 
 		#region IDataSource implementation
-		/// <summary>
-		/// Not used in this implementation of IDataSoure<T>.
-		/// </summary>
+
 		public event DataSyncErrorEventHandler<Acquaintance> OnDataSyncError;
 
 		public async Task<IEnumerable<Acquaintance>> GetItems()
@@ -146,10 +141,6 @@ namespace InTouch.Data
 			return await file.ReadAllTextAsync().ConfigureAwait(false);
 		}
 
-		/// <summary>
-		/// Generates the acquaintances.
-		/// </summary>
-		/// <returns>The acquaintances.</returns>
 		static List<Acquaintance> GenerateAcquaintances()
 		{
 			return new List<Acquaintance>()

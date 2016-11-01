@@ -36,7 +36,7 @@ namespace InTouch.Data
 
 		string _DataPartitionId => GuidUtility.Create(Settings.DataPartitionPhrase).ToString().ToUpper();
 
-        const string _LocalDbName = "acquaintances.db";
+        const string _LocalDbName = "InTouch.db";
 
 		/// <summary>
 		/// An event that is fired when a data sync error occurs.
@@ -148,10 +148,7 @@ namespace InTouch.Data
             }, false).ConfigureAwait(false);
         }
 
-		/// <summary>
-		/// Syncs the items.
-		/// </summary>
-		/// <returns>The items are synced.</returns>
+
         async Task<bool> SyncItemsAsync()
         {
             return await Execute(async () =>
@@ -161,15 +158,12 @@ namespace InTouch.Data
 
                 await Initialize().ConfigureAwait(false);
                 await EnsureDataIsSeededAsync().ConfigureAwait(false);
-				// PushAsync() has been omitted here because the _MobileService.SyncContext automatically calls PushAsync() before PullAsync() if it sees pending changes in the context. (Frequently misunderstood feature of the Azure App Service SDK)
                 await _AcquaintanceTable.PullAsync($"getAll{typeof(Acquaintance).Name}", _AcquaintanceTable.Where(x => x.DataPartitionId == _DataPartitionId)).ConfigureAwait(false);
                 return true;
             }, false);
         }
 
-        /// <summary>
-        /// Ensures the data is seeded.
-        /// </summary>
+
         async Task EnsureDataIsSeededAsync()
         {
             if (Settings.DataIsSeeded)
@@ -196,9 +190,7 @@ namespace InTouch.Data
             }
         }
 
-        /// <summary>
-        /// Resets the local store.
-        /// </summary>
+
         async Task ResetLocalStoreAsync()
         {
             _AcquaintanceTable = null;
@@ -214,9 +206,7 @@ namespace InTouch.Data
             Settings.DataIsSeeded = false;
         }
 
-        /// <summary>
-        /// Deletes the old local database.
-        /// </summary>
+
         async Task DeleteOldLocalDatabase()
         {
 			var datastoreFolderPathProvider = ServiceLocator.Current.GetInstance<IDatastoreFolderPathProvider>();
@@ -233,10 +223,7 @@ namespace InTouch.Data
 
         #region some nifty exception helpers
 
-        /// <summary>
-        /// This method is intended for encapsulating the catching of exceptions related to the Azure MobileServiceClient.
-        /// </summary>
-        /// <param name="execute">A Func that contains the async work you'd like to do.</param>
+
         static async Task Execute(Func<Task> execute)
         {
             try
@@ -249,12 +236,7 @@ namespace InTouch.Data
             }
         }
 
-        /// <summary>
-        /// This method is intended for encapsulating the catching of exceptions related to the Azure MobileServiceClient.
-        /// </summary>
-        /// <param name="execute">A Func that contains the async work you'd like to do, and will return some value.</param>
-        /// <param name="defaultReturnObject">A default return object, which will be returned in the event that an operation in the Func throws an exception.</param>
-        /// <typeparam name="T">The type of the return value that the Func will returns, and also the type of the default return object. </typeparam>
+
         static async Task<T> Execute<T>(Func<Task<T>> execute, T defaultReturnObject)
         {
             try
@@ -268,11 +250,7 @@ namespace InTouch.Data
             return defaultReturnObject;
         }
 
-        /// <summary>
-        /// Handles the exceptions.
-        /// </summary>
-        /// <returns>The exceptions.</returns>
-        /// <param name="ex">Ex.</param>
+
         static void HandleExceptions(Exception ex)
         {
             if (ex is MobileServiceInvalidOperationException)
@@ -302,12 +280,7 @@ namespace InTouch.Data
         #endregion
 
 
-        /// <summary>
-        /// Gets an HttpClentHandler. The main purpose of which in this case is to 
-        /// be able to inspect outbound HTTP traffic from the iOS simulator with
-        /// Charles Web Debugging Proxy on OS X. Android and UWP will return a null handler.
-        /// </summary>
-        /// <returns>An HttpClentHandler</returns>
+
         HttpClientHandler GetHttpClientHandler()
         {
             return ServiceLocator.Current.GetInstance<IHttpClientHandlerFactory>().GetHttpClientHandler();

@@ -9,7 +9,7 @@
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
 	<uses-permission android:name="android.permission.READ_LOGS" />
-	<application android:theme="@style/InTouchTheme" android:label="InTouch">
+	<application android:theme="@style/AcquaintTheme" android:label="InTouch">
 		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDWXN3vhIxKGx9dr1VtRT70XKZc2gFjahI" />
 		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
 	</application>
