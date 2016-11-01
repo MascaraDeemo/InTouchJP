@@ -7,9 +7,7 @@ using Android.Views;
 
 namespace InTouch.Native.Droid
 {
-	/// <summary>
-	/// Splash activity. Android doesn't support splash screens out of the box (like iOS), so we're making our own.
-	/// </summary>
+
 	[Activity(Label = "@string/app_name", MainLauncher = true, Theme = "@style/AcquaintTheme.Splash", Icon = "@mipmap/icon", NoHistory = true)]
 	public class SplashActivity : AppCompatActivity
 	{

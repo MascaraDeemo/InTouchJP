@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.xamarin.acquaintnative" android:versionCode="151" android:versionName="1.51">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.xamarin.Intouch" android:versionCode="151" android:versionName="1.51">
 	<uses-sdk android:minSdkVersion="17" />
 	<uses-permission android:name="android.permission.INTERNET" />
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -9,7 +9,7 @@
 	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 	<uses-permission android:name="android.permission.READ_PHONE_STATE" />
 	<uses-permission android:name="android.permission.READ_LOGS" />
-	<application android:label="Acquaint N" android:theme="@style/AcquaintTheme">
+	<application android:theme="@style/InTouchTheme" android:label="InTouch">
 		<meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyDWXN3vhIxKGx9dr1VtRT70XKZc2gFjahI" />
 		<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
 	</application>
