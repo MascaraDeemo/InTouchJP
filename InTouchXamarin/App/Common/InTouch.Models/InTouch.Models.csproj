@@ -58,13 +58,13 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Common\Acquaint.ModelContracts\Acquaint.ModelContracts.csproj">
-      <Project>{ED10B823-AA77-4142-919F-6A42C4D087A9}</Project>
-      <Name>InTouch.ModelContracts</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Acquaint.Abstractions\Acquaint.Abstractions.csproj">
+    <ProjectReference Include="..\InTouch.Abstractions\InTouch.Abstractions.csproj">
       <Project>{0B984675-688B-41C6-BEB7-D104DE9158C3}</Project>
       <Name>InTouch.Abstractions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Common\InTouch.ModelContracts\InTouch.ModelContracts.csproj">
+      <Project>{ED10B823-AA77-4142-919F-6A42C4D087A9}</Project>
+      <Name>InTouch.ModelContracts</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
