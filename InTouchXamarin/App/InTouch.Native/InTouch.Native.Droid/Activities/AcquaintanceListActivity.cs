@@ -23,9 +23,7 @@ using Acquaint.Native.Droid;
 
 namespace InTouch.Native.Droid
 {
-	/// <summary>
-	/// Acquaintance list activity.
-	/// </summary>
+
 	[Activity]
 	public class AcquaintanceListActivity : AppCompatActivity
 	{

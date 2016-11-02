@@ -44,15 +44,9 @@ namespace InTouch.Data
 			return Task.FromResult(0);
 		}
 
-		/// <summary>
-		/// An event that is fired when a data sync error occurs.
-		/// </summary>
 		public event DataSyncErrorEventHandler<Acquaintance> OnDataSyncError;
 
-		/// <summary>
-		/// Raises the data sync error event.
-		/// </summary>
-		/// <param name="e">A DataSyncErrorEventArgs or type T.</param>
+
 		protected virtual void RaiseDataSyncErrorEvent(DataSyncErrorEventArgs<Acquaintance> e)
 		{
 			DataSyncErrorEventHandler<Acquaintance> handler = OnDataSyncError;

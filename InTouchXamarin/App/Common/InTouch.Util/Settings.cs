@@ -4,9 +4,7 @@ using Plugin.Settings.Abstractions;
 
 namespace InTouch.Util
 {
-	/// <summary>
-	/// This class uses the Xamarin settings plugin (Plugins.Settings) to implement cross-platform storing of settings.
-	/// </summary>
+
 	public static class Settings
 	{
 		private static ISettings AppSettings
@@ -26,10 +24,7 @@ namespace InTouch.Util
 
 		public static event EventHandler OnDataPartitionPhraseChanged;
 
-		/// <summary>
-		/// Raises the data parition phrase changed event.
-		/// </summary>
-		/// <param name="e">E.</param>
+
 		static void RaiseDataParitionPhraseChangedEvent(EventArgs e)
 		{
 			var handler = OnDataPartitionPhraseChanged;

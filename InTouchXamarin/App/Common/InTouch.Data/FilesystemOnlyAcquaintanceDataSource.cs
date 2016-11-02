@@ -145,10 +145,10 @@ namespace InTouch.Data
 		{
 			return new List<Acquaintance>()
 			{
-				new Acquaintance() { Id = "00004363-F79A-44E7-BC32-6128E2EC8401", FirstName = "Sam", LastName = "Zhou", Company = "QUT", JobTitle = "Student", Email = "q924714879@gmail.com", Phone = "410-733-094", Street = "62 Gager St", City = "Brisbane", PostalCode = "4109", State = "QLD", PhotoUrl = "https://i.imgsafe.org/8cc89b4d23.jpg" },
-				new Acquaintance() { Id = "c227bfd2-c6f6-49b5-93ec-afef9eb18d08", FirstName = "Fabian", LastName = "Wentz", Company = "QUT", JobTitle = "Student", Email = "fabian.wentz@connect.qut.edu.au", Phone = "410-353-8029", Street = "51 Main St", City = "Brisbane", PostalCode = "4109", State = "QLD", PhotoUrl = "https://i.imgsafe.org/8cd24ef67a.jpg" },
-				new Acquaintance() { Id = "31bf6fe5-18f1-4354-9571-2cdecb0c00af", FirstName = "Lional", LastName = "Tan", Company = "QUT", JobTitle = "Student", Email = "iaape0@gmail.com", Phone = "411-870-7670", Street = "22/40 Lakefield Place", City = "Brisbane", PostalCode = "4113", State = "QLD", PhotoUrl = "https://i.imgsafe.org/8cdbf94c3a.jpg" },
-				new Acquaintance() { Id = "45d2ddc0-a8e9-4aea-8b51-2860c708e30d", FirstName = "Simon", LastName = "Liu", Company = "QUT", JobTitle = "Studnet", Email = "527472039", Phone = "412-344-7823", Street = "31 Janice St", City = "Brisbane", PostalCode = "4109", State = "QLD", PhotoUrl = "https://i.imgsafe.org/8cdde71e2d.jpg" },
+				new Acquaintance() { Id = "1", FirstName = "Sam", LastName = "Zhou", Company = "QUT", JobTitle = "Student", Email = "q924714879@gmail.com", Phone = "410-733-094", Street = "62 Gager St", City = "Brisbane", PostalCode = "4109", State = "QLD", PhotoUrl = "https://i.imgsafe.org/8cc89b4d23.jpg" },
+				new Acquaintance() { Id = "2", FirstName = "Fabian", LastName = "Wentz", Company = "QUT", JobTitle = "Student", Email = "fabian.wentz@connect.qut.edu.au", Phone = "410-353-8029", Street = "51 Main St", City = "Brisbane", PostalCode = "4109", State = "QLD", PhotoUrl = "https://i.imgsafe.org/8cd24ef67a.jpg" },
+				new Acquaintance() { Id = "3", FirstName = "Lional", LastName = "Tan", Company = "QUT", JobTitle = "Student", Email = "iaape0@gmail.com", Phone = "411-870-7670", Street = "22/40 Lakefield Place", City = "Brisbane", PostalCode = "4113", State = "QLD", PhotoUrl = "https://i.imgsafe.org/8cdbf94c3a.jpg" },
+				new Acquaintance() { Id = "4", FirstName = "Simon", LastName = "Liu", Company = "QUT", JobTitle = "Studnet", Email = "527472039", Phone = "412-344-7823", Street = "31 Janice St", City = "Brisbane", PostalCode = "4109", State = "QLD", PhotoUrl = "https://i.imgsafe.org/8cdde71e2d.jpg" },
 
 			};
 		}

@@ -1,6 +1,6 @@
 ﻿namespace InTouch.ModelContracts
 {
-	// This interface is shared between the backend and the client code to enforce the model contract.
+
 	public interface IAcquaintance 
 	{
 		string Id { get; set; }

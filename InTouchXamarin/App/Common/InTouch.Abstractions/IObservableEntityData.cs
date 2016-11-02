@@ -2,9 +2,6 @@
 
 namespace InTouch.Abstractions
 {
-	/// <summary>
-	/// A type that mirrors the properties of Microsoft.Azure.Mobile.Server.EntityData.
-	/// </summary>
 	public interface IObservableEntityData
 	{
 		string Id { get; set; }

@@ -24,9 +24,7 @@ using Acquaint.Native.Droid;
 
 namespace InTouch.Native.Droid
 {
-	/// <summary>
-	/// Acquaintance detail activity.
-	/// </summary>
+
 	[Activity]
 	public class AcquaintanceDetailActivity : AppCompatActivity, IOnMapReadyCallback
 	{

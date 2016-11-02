@@ -38,15 +38,10 @@ namespace InTouch.Data
 
         const string _LocalDbName = "InTouch.db";
 
-		/// <summary>
-		/// An event that is fired when a data sync error occurs.
-		/// </summary>
+
 		public event DataSyncErrorEventHandler<Acquaintance> OnDataSyncError;
 
-		/// <summary>
-		/// Raises the data sync error event.
-		/// </summary>
-		/// <param name="e">A DataSyncErrorEventArgs or type T.</param>
+
 		protected virtual void RaiseDataSyncErrorEvent(DataSyncErrorEventArgs<Acquaintance> e)
 		{
 			DataSyncErrorEventHandler<Acquaintance> handler = OnDataSyncError;
@@ -115,17 +110,13 @@ namespace InTouch.Data
 
         #region helper methods for dealing with the state of the local store
 
-        /// <summary>
-        /// Initialize this instance.
-        /// </summary>
+
         async Task<bool> Initialize()
         {
             return await Execute<bool>(async () =>
             {
                 if (_IsInitialized)
                     return true;
-
-                // We're passing in a handler here for the sole purpose of inspecting outbound HTTP requests with Charles Web Debugging Proxy on OS X. Only in debug builds.
 				_MobileService = new MobileServiceClient(Settings.AzureAppServiceUrl, GetHttpClientHandler());
 
                 _MobileServiceSQLiteStore = new MobileServiceSQLiteStore(_LocalDbName);

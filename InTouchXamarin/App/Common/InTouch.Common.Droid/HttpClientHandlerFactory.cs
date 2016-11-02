@@ -7,7 +7,6 @@ namespace InTouch.Common.Droid
 	{
 		public HttpClientHandler GetHttpClientHandler()
 		{
-			// not needed on Android
 			return null;
 		}
 	}

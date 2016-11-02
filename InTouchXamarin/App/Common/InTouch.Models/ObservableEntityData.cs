@@ -6,9 +6,7 @@ using Newtonsoft.Json;
 
 namespace InTouch.Models
 {
-	/// <summary>
-	/// A type that mirrors the properties of Microsoft.Azure.Mobile.Server.EntityData, and is also observable.
-	/// </summary>
+
 	public class ObservableEntityData : ObservableObject, IObservableEntityData
 	{
 		public ObservableEntityData()

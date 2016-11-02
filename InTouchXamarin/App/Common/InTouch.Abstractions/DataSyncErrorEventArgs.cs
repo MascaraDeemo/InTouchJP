@@ -2,10 +2,7 @@
 
 namespace InTouch.Abstractions
 {
-	/// <summary>
-	/// A generically-typed EventArgs class. 
-	/// Contains the local item queued to be pushed, and the backend service item that the local item is in conflict with.
-	/// </summary>
+
 	public class DataSyncErrorEventArgs<T> : EventArgs
 	{
 		public DataSyncErrorEventArgs(T localQueuedItem, T conflictedServiceItem)
